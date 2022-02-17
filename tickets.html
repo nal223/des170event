@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boca Boca Tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Boca Boca</a>
+        <a class="date">June 10th - 12th</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="#">Map</a>
+           
+            
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="home"> 
+        <video class="video-slide active" src="Boca Boca.mp4" autoplay muted loop></video>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+   
+      
+
+        
+
+        <div class="box">
+            <H1>General Admission ($100 - $250)</H1>
+            <ul>
+                <li>
+                    One day access to all stages - $100
+                </li>
+                <li>
+                    Three day access to all stages - $250
+                </li>
+    
+            </ul>
+            <button href="#">Buy Now</button>
+        </div>
+        <div class="box">
+            <H1>VIP ($700)</H1>
+            <ul>
+                <li>
+                    Three day access to all stages
+                </li>
+                <li>
+                    AC trailers
+                </li>
+                <li>
+                    Private bathrooms
+                </li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+        <div class="box">
+            <H1>Camping (3 nights)</H1>
+                <h3>Basic ($200)</h3>
+                <ul>
+                    <li>2 - 6 people</li>
+                    <li>Lot for your car and tent</li>
+                    <li>Shared toilets and showers</li>
+                </ul>
+
+                <h3>Glamping ($500)</h3>
+                <ul>
+                    <li>2 - 4 people</li>
+                    <li>Provided tent with 2 beds</li>
+                    <li>Private toilet, shared showers</li>
+                </ul>
+
+                <h3>RV ($1000)</h3>
+                <ul>
+                    <li>2 - 4 people</li>
+                    <li>AC and running water</li>
+                    <li>Private bathroom</li>
+                </ul>
+            <p></p>
+            <button>Buy Now</button>
+        </div>
+    
+    
+        
+
+      
+    </section>
+    
+    
+   
+
+    <script type="text/javascript">
+    
+    
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+    
+        
+        </script>
+</body>
+</html>
