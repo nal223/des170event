@@ -284,10 +284,13 @@ ul, h3{
   text-align: left;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
 .box{
-  flex-direction: column;
   position: relative;
-  display: flex;
   background-color: #8fdccd;
   color: #d16a65;
   padding: 2em;
@@ -304,4 +307,5 @@ button{
   padding: 10px 24px;
   color:#0096FF;
   font-weight: bold;
+  position: relative;
 }
