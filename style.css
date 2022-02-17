@@ -129,7 +129,7 @@ section{
   margin-bottom: 65px;
 }
 
-.home .content a{
+.home .content a.header{
   background: #fff;
   padding: 15px 35px;
   color: #1680AC;
