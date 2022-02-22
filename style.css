@@ -269,6 +269,40 @@ section{
   }
 }
 
+#map{
+  z-index: 999;
+  background: url("Resources/Map.png")no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 20em;
+  position: relative;
+}
+#pop{
+  background: url("Resources/Pop.png")no-repeat;
+  padding: 6em;
+  background-size: contain;
+  background-position: center;
+  transition: 0.3s ease;
+  border: none;
+}
+#rock{
+  background: url("Resources/Indie_Rock.png")no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: 0.3s ease;
+  padding: 6em;
+  border: none;
+}
+#edm{
+  background: url("Resources/EDM.png")no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: 0.3s ease;
+  padding: 6em;
+  border: none;
+}
+
+
 
 
 @media (max-width: 560px){
@@ -303,7 +337,7 @@ ul, h3{
   
 }
 
-button{
+button.mainbtn{
   background-color: white;
   border-radius:10px;
   padding: 10px 24px;
