@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boca Boca Tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Boca Boca</a>
+        <a class="date">June 10th - 12th</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a class = "header" href="tickets.html">Tickets</a>
+           
+            
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="home"> 
+        <video class="video-slide active" src="Boca Boca.mp4" autoplay muted loop></video>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    
+        
+    
+    
+    
+        <script type="text/javascript">
+    
+    
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+        
+            menuBtn.addEventListener("click", () => {
+              menuBtn.classList.toggle("active");
+              navigation.classList.toggle("active");
+            });
+        
+            
+            </script>
+    
+    
+    </body>
+    </html>

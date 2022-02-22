@@ -308,4 +308,6 @@ button{
   color:#0096FF;
   font-weight: bold;
   position: relative;
+  bottom: 0;
+  margin: 0 auto;
 }
