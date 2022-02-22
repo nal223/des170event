@@ -282,14 +282,25 @@ section{
 h1{
   text-align: center;
 }
-ul, h3{
+ul{
   text-align: left;
+  line-height: 2em;
+  height: fit-content;
+  vertical-align: middle;
+  
+  
+} 
+
+h3{
+  text-align: left;
+  
 }
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
   grid-gap: 2rem;
+
 }
 .box{
   position: relative;
@@ -298,7 +309,8 @@ ul, h3{
   padding: 2em;
   margin: 2em;
   border-radius: 10px;
-  justify-content: space-between
+  
+  
   
   
 }
