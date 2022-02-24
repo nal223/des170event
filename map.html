@@ -50,7 +50,23 @@
     
             const menuBtn = document.querySelector(".menu-btn");
             const navigation = document.querySelector(".navigation");
+
+            //Function to change the map to the empty map
+            function emptyMap(map){
+              map.style.background = 'url("Resources/EmptyMap.png")no-repeat';
+              map.style.backgroundSize = 'contain';
+              map.style.backgroundPosition = 'center';
+            }
+
+            //Function to change the empty map to the main map
+            function mainMap(map){
+              map.style.background = 'url("Resources/IconMap.png")no-repeat';
+              map.style.backgroundSize = 'contain';
+              map.style.backgroundPosition = 'center';
+              map.innerHTML = '';
+            }
         
+            //Toggle the menu
             menuBtn.addEventListener("click", () => {
               menuBtn.classList.toggle("active");
               navigation.classList.toggle("active");
@@ -62,39 +78,30 @@
             const map = document.getElementById("map");
 
             popbtn.addEventListener("click", () => {
-              if (map.style.background == "none"){
-                map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
-                map.style.backgroundSize = "contain"
-                map.style.backgroundPosition = "center";
-                map.innerHTML = "";
+              if (map.innerHTML === ''){
+                emptyMap(map);
+                map.innerHTML = '<h1 class = "lineup">Stage 1 - Pop</h1><ul><li>June 10th: Ariana Grande, Taylor Swift, Bruno Mars</li><li>June 11th: Justin Beiber, Billie Eilish, Adele</li><li>June 12th: Beyonce, Ed Sheeran, Katy Perry</li></ul>';
               }
               else{
-                map.style.background = "none";
-                map.innerHTML = '<h1 class = "lineup">Stage 1 - Pop</h1><ul><li>June 10th: Ariana Grande, Taylor Swift, Bruno Mars</li><li>June 11th: Justin Beiber, Billie Eilish, Adele</li><li>June 12th: Beyonce, Ed Sheeran, Katy Perry</li></ul>'
+                mainMap(map);
               }
             });
             rockbtn.addEventListener("click", () => {
-              if (map.style.background == "none"){
-                map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
-                map.style.backgroundSize = "contain"
-                map.style.backgroundPosition = "center";
-                map.innerHTML = '';
+              if (map.innerHTML === ''){
+                emptyMap(map);
+                map.innerHTML = '<h1 class = "lineup">Stage 3 - Indie Rock</h1><ul><li>June 10th: Wallows, Dayglow, Saint Motel</li><li>June 11th: Young the Giant, Briston Maroney, Vacation Manor</li><li>June 12th: Colony House, The Backseat Lovers, Grouplove</li></ul>';
               }
               else{
-                map.style.background = "none";
-                map.innerHTML = '<h1 class = "lineup">Stage 3 - Indie Rock</h1><ul><li>June 10th: Wallows, Dayglow, Saint Motel</li><li>June 11th: Young the Giant, Briston Maroney, Vacation Manor</li><li>June 12th: Colony House, The Backseat Lovers, Grouplove</li></ul>'
+                mainMap(map);
               }
             });
             edmbtn.addEventListener("click", () => {
-              if (map.style.background == "none"){
-                map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
-                map.style.backgroundSize = "contain"
-                map.style.backgroundPosition = "center";
-                map.innerHTML = '';
+              if (map.innerHTML === ''){
+                emptyMap(map);
+                map.innerHTML = '<h1 class = "lineup">Stage 2 - EDM</h1><ul><li>June 10th: Tiesto, Martin Garrix, Chris Lake</li><li>June 11th: Öwnboss, Mike Williams, Felix Jaehn</li><li>June 12th: Moski, Cheyenne Giles, Shouse, Dom Dalla</li></ul>';
               }
               else{
-                map.style.background = "none";
-                map.innerHTML = '<h1 class = "lineup">Stage 2 - EDM</h1><ul><li>June 10th: Tiesto, Martin Garrix, Chris Lake</li><li>June 11th: Öwnboss, Mike Williams, Felix Jaehn</li><li>June 12th: Moski, Cheyenne Giles, Shouse, Dom Dalla</li></ul>'
+                mainMap(map);
               }
             });
 
