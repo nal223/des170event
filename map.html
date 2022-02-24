@@ -32,11 +32,12 @@
         </div>
 
         <div id = "map">
+          
         </div>
         <div class = "grid">
           <button class = "icon" id = "pop"></button>
-          <button class = "icon" id = "rock"></button>
           <button class = "icon" id = "edm"></button>
+          <button class = "icon" id = "rock"></button>
         </div>
         
       </section>
@@ -65,9 +66,11 @@
                 map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
                 map.style.backgroundSize = "contain"
                 map.style.backgroundPosition = "center";
+                map.innerHTML = "";
               }
               else{
                 map.style.background = "none";
+                map.innerHTML = '<h1 class = "lineup">Stage 1 - Pop</h1><ul><li>June 10th: Ariana Grande, Taylor Swift, Bruno Mars</li><li>June 11th: Justin Beiber, Billie Eilish, Adele</li><li>June 12th: Beyonce, Ed Sheeran, Katy Perry</li></ul>'
               }
             });
             rockbtn.addEventListener("click", () => {
@@ -75,9 +78,11 @@
                 map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
                 map.style.backgroundSize = "contain"
                 map.style.backgroundPosition = "center";
+                map.innerHTML = '';
               }
               else{
                 map.style.background = "none";
+                map.innerHTML = '<h1 class = "lineup">Stage 3 - Indie Rock</h1><ul><li>June 10th: Wallows, Dayglow, Saint Motel</li><li>June 11th: Young the Giant, Briston Maroney, Vacation Manor</li><li>June 12th: Colony House, The Backseat Lovers, Grouplove</li></ul>'
               }
             });
             edmbtn.addEventListener("click", () => {
@@ -85,9 +90,11 @@
                 map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
                 map.style.backgroundSize = "contain"
                 map.style.backgroundPosition = "center";
+                map.innerHTML = '';
               }
               else{
                 map.style.background = "none";
+                map.innerHTML = '<h1 class = "lineup">Stage 2 - EDM</h1><ul><li>June 10th: Tiesto, Martin Garrix, Chris Lake</li><li>June 11th: Öwnboss, Mike Williams, Felix Jaehn</li><li>June 12th: Moski, Cheyenne Giles, Shouse, Dom Dalla</li></ul>'
               }
             });
 
