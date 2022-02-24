@@ -32,9 +32,11 @@
         </div>
 
         <div id = "map">
-          <button id = "pop"></button>
-          <button id = "rock"></button>
-          <button id = "edm"></button>
+        </div>
+        <div class = "grid">
+          <button class = "icon" id = "pop"></button>
+          <button class = "icon" id = "rock"></button>
+          <button class = "icon" id = "edm"></button>
         </div>
         
       </section>
@@ -53,6 +55,43 @@
               menuBtn.classList.toggle("active");
               navigation.classList.toggle("active");
             });
+
+            const popbtn = document.getElementById("pop");
+            const rockbtn = document.getElementById("rock");
+            const edmbtn = document.getElementById("edm");
+            const map = document.getElementById("map");
+
+            popbtn.addEventListener("click", () => {
+              if (map.style.background == "none"){
+                map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
+                map.style.backgroundSize = "contain"
+                map.style.backgroundPosition = "center";
+              }
+              else{
+                map.style.background = "none";
+              }
+            });
+            rockbtn.addEventListener("click", () => {
+              if (map.style.background == "none"){
+                map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
+                map.style.backgroundSize = "contain"
+                map.style.backgroundPosition = "center";
+              }
+              else{
+                map.style.background = "none";
+              }
+            });
+            edmbtn.addEventListener("click", () => {
+              if (map.style.background == "none"){
+                map.style.background = "url(\"Resources/IconMap.png\")no-repeat";
+                map.style.backgroundSize = "contain"
+                map.style.backgroundPosition = "center";
+              }
+              else{
+                map.style.background = "none";
+              }
+            });
+
         
             
             </script>

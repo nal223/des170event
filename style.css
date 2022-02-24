@@ -271,35 +271,36 @@ section{
 
 #map{
   z-index: 999;
-  background: url("Resources/Map.png")no-repeat;
+  background: url("Resources/IconMap.png")no-repeat;
   background-size: contain;
   background-position: center;
   padding: 20em;
   position: relative;
+  margin-top: 5em;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5em;
+}
+button.icon{
+  z-index: 888;
+  padding: 6em;
+  transition: 0.3s ease;
+  border: none;
 }
 #pop{
   background: url("Resources/Pop.png")no-repeat;
-  padding: 6em;
   background-size: contain;
   background-position: center;
-  transition: 0.3s ease;
-  border: none;
 }
 #rock{
   background: url("Resources/Indie_Rock.png")no-repeat;
   background-size: contain;
   background-position: center;
-  transition: 0.3s ease;
-  padding: 6em;
-  border: none;
 }
 #edm{
   background: url("Resources/EDM.png")no-repeat;
   background-size: contain;
   background-position: center;
-  transition: 0.3s ease;
-  padding: 6em;
-  border: none;
 }
 
 
@@ -332,14 +333,16 @@ h3{
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
   grid-gap: 2rem;
-
+  margin-left: 3rem;
+}
+li{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .box{
   position: relative;
   background-color: #8fdccd;
-  color: #d16a65;
   padding: 2em;
   margin: 2em;
   border-radius: 10px;
