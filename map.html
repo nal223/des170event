@@ -24,7 +24,7 @@
         </div>
       </header>
       <section class="home"> 
-        <video class="video-slide active" src="Resources/Boca Boca.mp4" autoplay muted loop></video>
+
         <div class="media-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -34,10 +34,11 @@
         <div id = "map">
           
         </div>
+        <br>
         <div class = "grid">
-          <button class = "icon" id = "pop"></button>
-          <button class = "icon" id = "edm"></button>
-          <button class = "icon" id = "rock"></button>
+          <div class = "btnholder"><button class = "icon" id = "pop"></button></div>
+          <div class = "btnholder"><button class = "icon" id = "edm"></button></div>
+          <div class = "btnholder"><button class = "icon" id = "rock"></button></div>
         </div>
         
       </section>
@@ -56,6 +57,7 @@
               map.style.background = 'url("Resources/EmptyMap.png")no-repeat';
               map.style.backgroundSize = 'contain';
               map.style.backgroundPosition = 'center';
+              map.style.padding = '6.5em';
             }
 
             //Function to change the empty map to the main map
@@ -64,6 +66,7 @@
               map.style.backgroundSize = 'contain';
               map.style.backgroundPosition = 'center';
               map.innerHTML = '';
+              map.style.padding = '15em';
             }
         
             //Toggle the menu
@@ -76,6 +79,8 @@
             const rockbtn = document.getElementById("rock");
             const edmbtn = document.getElementById("edm");
             const map = document.getElementById("map");
+            const date = document.getElementsByClassName("date")[0];
+            date.style.color = 'white';
 
             popbtn.addEventListener("click", () => {
               if (map.innerHTML === ''){
