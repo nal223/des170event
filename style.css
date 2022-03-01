@@ -286,12 +286,18 @@ button.icon{
   padding: 6em;
   transition: 0.3s ease;
   border: none;
+  
 }
+
+
 #pop{
   background: url("Resources/Pop.png")no-repeat;
   background-size: contain;
   background-position: center;
+  
 }
+
+
 #rock{
   background: url("Resources/Indie_Rock.png")no-repeat;
   background-size: contain;
@@ -301,6 +307,18 @@ button.icon{
   background: url("Resources/EDM.png")no-repeat;
   background-size: contain;
   background-position: center;
+}
+map h1{
+  text-align: left;
+}
+
+p {
+  text-align: left;
+  padding: 20px;
+}
+
+.home.grid.lineup h1{
+text-align: left;
 }
 
 
