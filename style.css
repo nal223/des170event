@@ -151,9 +151,6 @@ section{
   color: #fff;
   font-size: 1.6em;
   transition: 0.3s ease;
-}
-
-.home .media-icons a:not(:last-child){
   margin-bottom: 20px;
 }
 
@@ -284,9 +281,34 @@ button.icon{
   padding: 5em;
   transition: 0.3s ease;
   border: none;
-  
+}
+#pop:hover{
+  transform: scale(1.3);
+}
+#rock:hover{
+  transform: scale(1.3);
+}
+#edm:hover{
+  transform: scale(1.3);
 }
 
+#beachimg{
+  
+  width: 600px;
+  height: 338px;
+  border: 2px solid black;
+}
+#stageimg{
+  margin-left: 10em;
+  width: 225px;
+  height: 338px;
+  border: 2px solid black;
+}
+
+.imgs{
+  margin-left: 3em;
+  margin-right: 3em;
+}
 
 #pop{
   background: url("Resources/Pop.png")no-repeat;
@@ -294,10 +316,7 @@ button.icon{
   background-position: center;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 34%;
 }
 
 
@@ -307,10 +326,7 @@ button.icon{
   background-position: center;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 34%;
 }
 #edm{
   background: url("Resources/EDM.png")no-repeat;
@@ -318,10 +334,7 @@ button.icon{
   background-position: center;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 34%;
 }
 
 
@@ -378,6 +391,17 @@ h3{
   grid-gap: 2rem;
   margin-left: 3rem;
 }
+#ticketspage{
+  background: url("Resources/Beach.jpg")no-repeat;
+  background-size: cover;
+  border-top: 5px solid white;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 800;
+}
 li{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -387,10 +411,7 @@ li{
   padding: 2em;
   margin: 2em;
   border-radius: 10px;
-  
-  
-  
-  
+  border: 10px solid white;
 }
 
 button.mainbtn{

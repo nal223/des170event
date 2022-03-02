@@ -23,18 +23,21 @@
           </div>
         </div>
       </header>
-      <section class="home"> 
-        <video class="video-slide active" src="Resources/Boca Boca.mp4" autoplay muted loop></video>
+      <section class="home">
+        <section id = 'ticketspage'>
         <div class="media-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
+
+        <!-- <div class = 'imgs'>
+            <img id = 'beachimg' src = 'Resources/Beach.jpg'>
+            <img id = 'stageimg' src = 'Resources/Stage.jpg'>
+        </div> -->
    
       
-
-        
-        <div class = "grid">
+        <div class = "grid" id = 'tickets'>
             <div class="box">
                 <H1>General Admission ($100 - $250)</H1>
                 <ul>
@@ -95,11 +98,8 @@
                 <button class = "mainbtn">Buy Now</button>
             </div>
         </div>
-    
-    
-        
 
-      
+    </section>
     </section>
     
     
@@ -115,6 +115,9 @@
           menuBtn.classList.toggle("active");
           navigation.classList.toggle("active");
         });
+
+        const date = document.getElementsByClassName("date")[0];
+        date.style.color = 'white';
     
         
         </script>

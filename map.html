@@ -57,7 +57,7 @@
               map.style.background = 'url("Resources/EmptyMap.png")no-repeat';
               map.style.backgroundSize = 'contain';
               map.style.backgroundPosition = 'center';
-              map.style.padding = '6.5em';
+              map.style.padding = '0em';
             }
 
             //Function to change the empty map to the main map
@@ -79,6 +79,7 @@
             const rockbtn = document.getElementById("rock");
             const edmbtn = document.getElementById("edm");
             const map = document.getElementById("map");
+            map.innerHTML = '';
             const date = document.getElementsByClassName("date")[0];
             date.style.color = 'white';
 
