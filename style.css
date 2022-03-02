@@ -266,7 +266,7 @@ section{
 }
 
 #map{
-  z-index: 999;
+  z-index: 998;
   background: url("Resources/IconMap.png")no-repeat;
   background-size: contain;
   background-position: center;
@@ -292,23 +292,6 @@ button.icon{
   transform: scale(1.3);
 }
 
-#beachimg{
-  
-  width: 600px;
-  height: 338px;
-  border: 2px solid black;
-}
-#stageimg{
-  margin-left: 10em;
-  width: 225px;
-  height: 338px;
-  border: 2px solid black;
-}
-
-.imgs{
-  margin-left: 3em;
-  margin-right: 3em;
-}
 
 #pop{
   background: url("Resources/Pop.png")no-repeat;
@@ -402,6 +385,15 @@ h3{
   position: absolute;
   z-index: 800;
 }
+#headerline{
+  border-top: 5px solid white;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 800;
+}
 li{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -412,6 +404,7 @@ li{
   margin: 2em;
   border-radius: 10px;
   border: 10px solid white;
+  box-shadow: 4px 4px 8px 4px #555555;
 }
 
 button.mainbtn{
