@@ -191,6 +191,11 @@ section{
   
 }
 
+.address{
+  color: #da8c2f;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @media (max-width: 1040px){
   header{
     padding: 12px 20px;
@@ -275,6 +280,7 @@ section{
   width: 100%;
   height: 100%;
   margin-bottom: 5em;
+  
 }
 button.icon{
   z-index: 888;
@@ -325,16 +331,19 @@ button.icon{
   text-align: center;
   padding: 20px;
   font-size: 1.5em;
-  color: #da8c2f;
+  color: #d16a65;
 }
 .home #map h1 {
   text-align: center;
   font-size: 4em;
-  padding: 30px;
+  
+  color: #fff;
 }
 .home #map h2 {
   text-align: center;
   font-size: 3em;
+  padding-top: 20px;
+  color: #fff;
 }
 
 
@@ -402,7 +411,7 @@ li{
   background-color: #8fdccd;
   padding: 2em;
   margin: 2em;
-  border-radius: 10px;
+  border-radius: 10%;
   border: 10px solid white;
   box-shadow: 4px 4px 8px 4px #555555;
 }
@@ -411,9 +420,22 @@ button.mainbtn{
   background-color: white;
   border-radius:10px;
   padding: 10px 24px;
-  color:#0096FF;
+  color:#8fdccd;
   font-weight: bold;
   position: relative;
   bottom: 0;
   margin: 0 auto;
+  transition: ease-in-out 0.3s;
+}
+
+.mainbtn:hover{
+  transform: scale(1.1);
+  background-color: lightgray;
+  color: #da8c2f;
+}
+
+iframe{
+  border-radius: 10%;
+  border: 10px solid white;
+  box-shadow: 4px 4px 8px 4px #555555;
 }
